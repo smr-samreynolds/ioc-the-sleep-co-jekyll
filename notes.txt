@@ -28,12 +28,22 @@
         - go back to the header and take the part that is consitent, the part that will be used again and again and paste it into the include (header-nav.html) and delete it from the index.
         In its place add liquid text {% include header-nav.html%} - this tells the browser to pull in the header nav and paste it in this place.
 
-*** REGULARLY SUBMIT TO GITHUB ***      
+*** REGULARLY SUBMIT TO GITHUB ***   
+*** It can be helpful to have the terminal open all the time as you'll easily be able to see any errors as they're happening. It's only really possible on a bigger/external monitor   
 
 - Now we go through the about page and so the same thing
     - look at/ find the parts we want to cut out.
         - from the <body> tag up and the from the <footer> down we can delete.
     - add in the liquid text for the header-nav.html
     - look carefully at the classes in the header across the index and about pages and make sure they are consistently placed within the same elements. 
-    
 
+- Now onto the "products" and "contact" pages.
+ 
+- Another way to make the header changes is to copy all of the header into the header-nav.html include and then replace each part with a variable.
+- Go through the header and decide on which parts will change across different pages.
+- Add a variable for each part of the text, with and without the span
+
+
+- Icon grid on the homepage
+- delete three of them
+- wrap the remaining one in a for loop
