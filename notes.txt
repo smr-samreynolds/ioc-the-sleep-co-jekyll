@@ -33,4 +33,7 @@
 - Now we go through the about page and so the same thing
     - look at/ find the parts we want to cut out.
         - from the <body> tag up and the from the <footer> down we can delete.
+    - add in the liquid text for the header-nav.html
+    - look carefully at the classes in the header across the index and about pages and make sure they are consistently placed within the same elements. 
+    
 
