@@ -1,0 +1,36 @@
+- We want to jekyll-ify the head, header and footer.
+- We'll create a layout template that includes all the stuff that gets repeated and then adapt it for each page.
+
+- The header changes slightly from page to page - the text, the subtitle and the banner image height.
+    - There are two ways to go about this.
+
+- The "_site" folder is where jekyll will output.
+- Create an "_layouts" folder and inside create a "default.html" file, this is the code used to load every single page.
+
+- Looking at the "index.html" go through and figure out which parts we want to have on every single page.
+    - viewport meta
+    - title
+    - font awesome
+    - gridlex
+    - google gonts
+    - stylesheet
+    - closing </head> tag
+    - open <body> tag
+- copy from the !DOCTYPE to the open <body> tag, paste it into the "default.html" and then delete it from the "index.html"
+
+- Scroll down in the "index.html" and find the first part that is repeated which is the footer. Simply put, whatever you want to appear on every single page should be moved to the "default.html"
+
+- Tackling the header
+    - Figure out which parts stay the same and which parts changes
+    - For the parts that stay the same we can create an "include".
+        - create a new folder called "_includes"
+        - create a new html file/include for the header and name it something that relates to the code inside e.g. "header-nav.html"
+        - go back to the header and take the part that is consitent, the part that will be used again and again and paste it into the include (header-nav.html) and delete it from the index.
+        In its place add liquid text {% include header-nav.html%} - this tells the browser to pull in the header nav and paste it in this place.
+
+*** REGULARLY SUBMIT TO GITHUB ***      
+
+- Now we go through the about page and so the same thing
+    - look at/ find the parts we want to cut out.
+        - from the <body> tag up and the from the <footer> down we can delete.
+
