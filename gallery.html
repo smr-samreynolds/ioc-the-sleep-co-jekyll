@@ -41,23 +41,22 @@ gallery:
  </header>
 
  
- 
-
  <!--------------- Popup Image Gallery ------------------->
  <section class="padded">   
     <h2>Popup Gallery</h2>
     <div class="gallery grid" id="lightgallery">
-        {% for item in page.gallery %}
-      
-          <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
-            <div class="bg-image {{item.aspect-ratio}}" 
-                style="background-image: url('{{item.background_image}}');">
-            </div>
-          </a> 
-      
-        {% endfor %}
+          {% for item in page.gallery %}
+
+    <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
+      <div class="bg-image {{item.aspect-ratio}}" 
+          style="background-image: url('{{item.background_image}}');">
+      </div>
+    </a> 
+
+  {% endfor %}
       </div>
 </section>
+
  <!--------------- Standard Image Gallery ------------------->
  <section>
     <h2>Standard Gallery</h2>
