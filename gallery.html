@@ -3,28 +3,28 @@ layout: default
 gallery:
  - column-size: col-3
    aspect-ratio: square
-   background-image: https://source.unsplash.com/kSslUrbE2Kc
+   background_image: https://source.unsplash.com/kSslUrbE2Kc
  - column-size: col-3
    aspect-ratio: square
-   background-image: https://source.unsplash.com/0653_wY0nRc
+   background_image: https://source.unsplash.com/0653_wY0nRc
  - column-size: col-3
    aspect-ratio: square
-   background-image: https://source.unsplash.com/bNNS4inRa38
+   background_image: https://source.unsplash.com/bNNS4inRa38
  - column-size: col-3
    aspect-ratio: square
-   background-image: https://source.unsplash.com/hZPYwYR02Yo
+   background_image: https://source.unsplash.com/hZPYwYR02Yo
  - column-size: col-6
    aspect-ratio: portrait
-   background-image: https://source.unsplash.com/jsCC0c2sZTI
+   background_image: https://source.unsplash.com/jsCC0c2sZTI
  - column-size: col-6
    aspect-ratio: portrait
-   background-image: https://source.unsplash.com/NXET8dOlKHU
+   background_image: https://source.unsplash.com/NXET8dOlKHU
  - column-size: col-8
    aspect-ratio: landscape
-   background-image: https://source.unsplash.com/KMn4VEeEPR8
+   background_image: https://source.unsplash.com/KMn4VEeEPR8
  - column-size: col-4
    aspect-ratio: portrait-tall
-   background-image: https://source.unsplash.com/hZPYwYR02Yo
+   background_image: https://source.unsplash.com/hZPYwYR02Yo
 ---
 
 <!--------------- Header Banner ------------------->
@@ -46,7 +46,7 @@ gallery:
         
         {% for item in page.gallery %}
         <div class="{{item.column-size}}">
-            <div class="bg-image {{item.aspect-ratio}} {{item.background-image}}" 
+            <div class="bg-image {{item.aspect-ratio}} {{item.background_image}}" 
                  style="background-image: url('{{item.background-image}}');">
             </div>
         </div>
