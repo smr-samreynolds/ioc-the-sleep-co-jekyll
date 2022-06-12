@@ -1,0 +1,98 @@
+---
+layout: default
+gallery:
+ - column-size: col-3
+   aspect-ratio: square
+   background-image: https://source.unsplash.com/kSslUrbE2Kc
+ - column-size: col-3
+   aspect-ratio: square
+   background-image: https://source.unsplash.com/0653_wY0nRc
+ - column-size: col-3
+   aspect-ratio: square
+   background-image: https://source.unsplash.com/bNNS4inRa38
+ - column-size: col-3
+   aspect-ratio: square
+   background-image: https://source.unsplash.com/hZPYwYR02Yo
+ - column-size: col-6
+   aspect-ratio: portrait
+   background-image: https://source.unsplash.com/jsCC0c2sZTI
+ - column-size: col-6
+   aspect-ratio: portrait
+   background-image: https://source.unsplash.com/NXET8dOlKHU
+ - column-size: col-8
+   aspect-ratio: landscape
+   background-image: https://source.unsplash.com/KMn4VEeEPR8
+ - column-size: col-4
+   aspect-ratio: portrait-tall
+   background-image: https://source.unsplash.com/hZPYwYR02Yo
+---
+
+<!--------------- Header Banner ------------------->
+<header class="grid tall-100 md-tall-80"> 
+    {% include header-nav.html %}
+     <div class="col-12 text-center"> 
+         <h3 class="font-weight-extra-bold editable" data-aos="fade-in" data-aos-duration="1000">
+             <span class="featured-text"> explore</span> our world
+         </h3>
+         <h1 class="font-weight-light editable" data-aos="fade-up" data-aos-delay="50">
+             the ultimate mattress solution
+         </h1> 
+     </div> 
+ </header>
+
+ <!--------------- Image Gallery ------------------->
+ <section class="padded">
+    <div class="gallery grid">
+        
+        {% for item in page.gallery %}
+        <div class="{{item.column-size}}">
+            <div class="bg-image {{item.aspect-ratio}} {{item.background-image}}" 
+                 style="background-image: url('{{item.background-image}}');">
+            </div>
+        </div>
+        {% endfor %}
+        
+        <!-- <div class="col-3_md-6">
+             <div class="bg-image square maldives-2"></div>
+        </div>
+        <div class="col-3_md-6">
+            <div class="bg-image square maldives-3"></div>
+        </div>
+        <div class="col-3_md-6">
+            <div class="bg-image square maldives-4"></div>
+        </div>
+        <div class="col-6">
+            <div class="bg-image portrait maldives-5"></div>
+        </div>
+        <div class="col-6">
+            <div class="bg-image portrait maldives-6"></div>
+        </div>
+        <div class="col-12">
+            <div class="bg-image landscape maldives-7"></div>
+        </div> -->
+    </div>
+
+    <!-- <div class="gallery grid">
+        <div class="col-3_md-6">
+            <div class="bg-image square maldives-1"></div>
+        </div>
+        <div class="col-3_md-6">
+             <div class="bg-image square maldives-2"></div>
+        </div>
+        <div class="col-3_md-6">
+            <div class="bg-image square maldives-3"></div>
+        </div>
+        <div class="col-3_md-6">
+            <div class="bg-image square maldives-4"></div>
+        </div>
+        <div class="col-6">
+            <div class="bg-image portrait maldives-5"></div>
+        </div>
+        <div class="col-6">
+            <div class="bg-image portrait maldives-6"></div>
+        </div>
+        <div class="col-12">
+            <div class="bg-image landscape maldives-7"></div>
+        </div>
+    </div> -->
+</section>

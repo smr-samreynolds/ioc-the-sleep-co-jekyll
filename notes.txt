@@ -47,3 +47,18 @@
 - Icon grid on the homepage
 - delete three of them
 - wrap the remaining one in a for loop
+
+CUSTOM ADDING IMAGES
+- in the products page, cards section.
+- a way to add custom IMAGES
+- find where the images are being added. In this case it is the class "bg-image" usually we we would add an additional class e.g. bg-sheets and then set it up in the css. But this isn't very helpful if your clients want to be able to change the iamge themselves in the CMS
+- for 99% of things CSS should be kept in a separate style sheet. Inline CSS can be useful in this case to enable clients to change the images themselves. So we'll hardcode the css into the html jekyll loop using the style attribute, this carries a very high specificity. 
+
+ADDING A HAMBURGER MENU USING jQUERY
+- first add the jQuery CDN, google it and then copy the script tag.
+- we want to add this to every page so we will add it into the head of the default page just above the closing </body> tag. 
+- Make sure to add jQuery first and then any external tools like a pop-up gallery or slick slider. 
+- Your own custom javascript should go at the end.
+- Go to the header-nav.html include and replace the nav that is alread in there and replace it with a hamburger nav on mobile.
+
+*** Adding a jekyll responsive gallery ***
