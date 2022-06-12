@@ -12,3 +12,10 @@ $( document ).ready(function() {
         duration: 500
     });
 });
+
+
+// Light Gallery - Popup gallery
+lightGallery(document.getElementById('lightgallery'), {
+    speed: 500,
+    download: false
+});

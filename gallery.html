@@ -40,36 +40,36 @@ gallery:
      </div> 
  </header>
 
- <!--------------- Image Gallery ------------------->
- <section class="padded">
+ 
+ 
+
+ <!--------------- Popup Image Gallery ------------------->
+ <section class="padded">   
+    <h2>Popup Gallery</h2>
+    <div class="gallery grid" id="lightgallery">
+        {% for item in page.gallery %}
+      
+          <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
+            <div class="bg-image {{item.aspect-ratio}}" 
+                style="background-image: url('{{item.background_image}}');">
+            </div>
+          </a> 
+      
+        {% endfor %}
+      </div>
+</section>
+ <!--------------- Standard Image Gallery ------------------->
+ <section>
+    <h2>Standard Gallery</h2>
     <div class="gallery grid">
         
         {% for item in page.gallery %}
         <div class="{{item.column-size}}">
             <div class="bg-image {{item.aspect-ratio}} {{item.background_image}}" 
-                 style="background-image: url('{{item.background-image}}');">
+                 style="background-image: url('{{item.background_image}}');">
             </div>
         </div>
         {% endfor %}
-        
-        <!-- <div class="col-3_md-6">
-             <div class="bg-image square maldives-2"></div>
-        </div>
-        <div class="col-3_md-6">
-            <div class="bg-image square maldives-3"></div>
-        </div>
-        <div class="col-3_md-6">
-            <div class="bg-image square maldives-4"></div>
-        </div>
-        <div class="col-6">
-            <div class="bg-image portrait maldives-5"></div>
-        </div>
-        <div class="col-6">
-            <div class="bg-image portrait maldives-6"></div>
-        </div>
-        <div class="col-12">
-            <div class="bg-image landscape maldives-7"></div>
-        </div> -->
     </div>
 
     <!-- <div class="gallery grid">
@@ -96,3 +96,6 @@ gallery:
         </div>
     </div> -->
 </section>
+
+
+    
