@@ -5,7 +5,7 @@ $( document ).ready(function() {
 
         $(this).toggleClass('active');
         $(".mobile-menu").fadeToggle();
-    })
+    });
 
     // animate on scroll - activate/initiate
     AOS.init({
@@ -14,8 +14,12 @@ $( document ).ready(function() {
 });
 
 
-// Light Gallery - Popup gallery
 lightGallery(document.getElementById('lightgallery'), {
+    speed: 500,
+    download: false
+});
+
+lightGallery(document.getElementById('lightgallery-2'), {
     speed: 500,
     download: false
 });
